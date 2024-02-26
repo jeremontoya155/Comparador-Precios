@@ -12,8 +12,12 @@
         <h1 class="mb-4">Web Scraping App</h1>
         <form action="/scrape" method="POST">
             <div class="form-group">
+                <label for="Ejemplo">Ingrese un producto</label>
+                <input type="number" class="form-control" id="Ejemplo" name="Ejemplo" >
+            </div>
+            <div class="form-group">
                 <label for="num_paginas">Número de Páginas:</label>
-                <input type="number" class="form-control" id="num_paginas" name="num_paginas" value="1">
+                <input type="number" class="form-control" id="num_paginas" name="num_paginas" value="5">
             </div>
             <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="farmacia_lider" name="farmacia_lider">
