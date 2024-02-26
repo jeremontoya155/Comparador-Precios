@@ -1,4 +1,6 @@
 Flask
 Gunicorn
 Pandas
-BeautifulSoup
+beautifulsoup4
+openpyxl
+requests
