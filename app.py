@@ -5,7 +5,7 @@ import pandas as pd
 import re
 
 app = Flask(__name__)
-
+#Cambiamos el nombre
 # Función para obtener productos y precios de Farmacia Líder
 def obtener_productos_farmacia_lider(num_paginas=15):
     resultados_farmacia_lider = []
