@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping App</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Web Scraping App</h1>
+        <form action="/scrape" method="POST">
+            <div class="form-group">
+                <label for="num_paginas">Número de Páginas:</label>
+                <input type="number" class="form-control" id="num_paginas" name="num_paginas" value="15">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="farmacia_lider" name="farmacia_lider">
+                <label class="form-check-label" for="farmacia_lider">Farmacia Líder</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="farmacia_general_paz" name="farmacia_general_paz">
+                <label class="form-check-label" for="farmacia_general_paz">Farmacia General Paz</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="super_mami" name="super_mami">
+                <label class="form-check-label" for="super_mami">Super Mami</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="ferniplast" name="ferniplast">
+                <label class="form-check-label" for="ferniplast">Ferniplast</label>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Realizar Scraping y Exportar</button>
+        </form>
+        <div class="mt-3">
+            {% if message %}
+                <p>{{ message }}</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
